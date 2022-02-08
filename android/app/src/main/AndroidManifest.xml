@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tester_widgets">
-   <application
+    <!-- Required to fetch data from the internet. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
         android:label="tester_widgets"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
@@ -25,8 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-       <!-- Required to fetch data from the internet. -->
-       <uses-permission android:name="android.permission.INTERNET" />
 
        <!-- Don't delete the meta-data below.
             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
@@ -34,4 +35,5 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+
 </manifest>
